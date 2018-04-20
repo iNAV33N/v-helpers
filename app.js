@@ -77,7 +77,7 @@ function gen(){
     if(emsg.length > 0) {
         doc.text(0.5, 14, emsg);
     }
-    doc.save('test.pdf');
+    doc.save('VHelpers.pdf');
       
 }
 
