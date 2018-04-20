@@ -7,6 +7,8 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bulma/0.7.0/css/bulma.min.css">
     <script defer src="https://use.fontawesome.com/releases/v5.0.7/js/all.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jspdf/1.3.5/jspdf.debug.js" integrity="sha384-CchuzHs077vGtfhGYl9Qtc7Vx64rXBXdIAZIPbItbNyWIRTdG0oYAqki3Ry13Yzu" crossorigin="anonymous"></script>
+    <script src="logo.js"></script>
+    <script src="bg.js"></script>
     <script src="app.js"></script>
   </head>
   <body>
@@ -54,6 +56,33 @@
           <input class="input is-rounded" type="text" placeholder="Amount" id="amt">
         </div>
       </div>
+      <div id="extra" style="display: none">
+        <div class="field">
+          <div class="control">
+            <input class="input is-rounded" type="text" placeholder="Tez/Paytm" id="ebank" value="8903241856">
+          </div>
+        </div>
+        <div class="field">
+          <div class="control">
+            <input class="input is-rounded" type="text" placeholder="Bank" id="bank" value="Standard Chartered">
+          </div>
+        </div>
+        <div class="field">
+          <div class="control">
+            <input class="input is-rounded" type="text" placeholder="Account No" id="acc" value="42111517253">
+          </div>
+        </div>
+        <div class="field">
+          <div class="control">
+            <input class="input is-rounded" type="text" placeholder="IFSC" id="ifsc" value="SCBL0036088">
+          </div>
+        </div>
+        <div class="field">
+          <div class="control">
+            <textarea class="textarea" placeholder="Extra Message" id="emsg"></textarea>
+          </div>
+        </div>
+      </div>
       <div class="field">
         <div class="file has-name is-fullwidth">
         <label class="file-label">
@@ -97,6 +126,12 @@
           </span>
           <span>Generate</span>
         </a>
+        <a class="button is-info is-outlined" id="eBut" onclick="showAddInputs()">
+            <span class="icon">
+              <i class="far fa-keyboard"></i>
+            </span>
+            <span>Additional Inputs</span>
+          </a>
       </div>        
     </div>    
   </body>
