@@ -70,7 +70,7 @@ function gen(){
     doc.text(0.5, 7, "Posted Date: " + dt);
     doc.setFontSize(50);
     doc.text(0.5, 8, "Amount Needed: " + amt);
-    doc.text(0.5, 9, "Tez / Paytm: " + ebank);
+    doc.text(0.5, 9, "GPay / Paytm: " + ebank);
     doc.text(0.5, 10, "Bank: " + bank);
     doc.text(0.5, 11, "Acc No: " + acc);
     doc.text(0.5, 12, "IFSC Code: " + ifsc);
